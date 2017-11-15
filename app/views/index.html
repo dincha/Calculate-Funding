@@ -7,58 +7,52 @@
 {% block content %}
 
 <main id="content" role="main">
+
+
+
   <div class="grid-row">
-    <div class="column-two-thirds">
+    <div class="column-full">
 
       <h1 class="heading-xlarge">
-        The GOV.UK prototype kit
-        <span class="heading-secondary">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
+        Calculate Funding
+      </h1>
+
+
+  <div class="form-group">
+    <div class="panel panel-border-narrow">
       <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
+        Sprint 4 <br> Start date: 06/10/2017 <br> End date: 17/10/2017
       </p>
-
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
-
-      <h2 class="heading-medium">About this page</h2>
-
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-			<h2 class="heading-medium">Examples and documentation</h2>
-
-			<ul class="list list-bullet">
-				<li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-				<li><a href="https://github.com/alphagov/govuk_prototype_kit">GitHub</a></li>
-			</ul>
-
-      <h2 class="heading-medium">Other resources</h2>
-
-			<ul class="list list-bullet">
-				<li>
-					<a href="https://govuk-elements.herokuapp.com/snippets/">
-						Guide to GOV.UK Elements
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/service-manual">
-						Service design manual
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/design-principles">
-						Government Digital Service Design Principles
-					</a>
-				</li>
-			</ul>
 
     </div>
   </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Page Name</th>
+            <th class="numeric" scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><a href="contact us">YPA <a></th>
+            <td class="numeric">breif about the design goes here</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="Application page">Journey 1</a></th>
+            <td class="numeric">breif about the design goes here</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="Search Results">Journey 2</a></th>
+            <td class="numeric">breif about the design goes here</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+  </div>
+
 </main>
 
 {% endblock %}
-
-
